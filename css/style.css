@@ -53,16 +53,6 @@ header>ul#buttons.menu{
 
 }
 
-#buttons ul {
-    list-style: none;
-    padding: 1em;
-}
-
-#buttons li:hover {
-    color: var(--main-color);
-    border-top: solid 2px var(--main-color); 
-}
-
 .fa-solid {
     color: var(--main-color);
 }
