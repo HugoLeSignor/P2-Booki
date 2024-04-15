@@ -159,7 +159,7 @@ header>ul#buttons.menu{
 
     header > img {
         order: 1; 
-        padding: 1em;
+        
     }
 
     header > ul {
@@ -180,6 +180,7 @@ header>ul#buttons.menu{
     header>ul>li>a {
         display: block;
         width: 100%;
+
         text-align: center;
         padding: 10px 0;
         margin: 0%;
@@ -222,6 +223,7 @@ footer {
     margin-bottom: 0.5em;
 }
 
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -259,6 +261,7 @@ footer {
     .column {
         flex: 1 0 33%; 
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -270,6 +273,10 @@ footer {
     .column {
         flex: 1 0 100%; 
         margin-bottom: 1em; 
+    }
+
+    .main-container {
+        padding: 0;
     }
 }
 
