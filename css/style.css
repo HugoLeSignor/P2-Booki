@@ -60,6 +60,16 @@ a {
     color: var(--main-bg-color)
 }
 
+
+
+
+
+
+
+
+
+
+
 /****** Header ***********/
 
 header {
@@ -194,6 +204,122 @@ header>ul#buttons.menu{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+/****** Formulaire ***********/
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+
+}
+
+hgroup h1 {
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+hgroup h2 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+form {
+    padding: 1em;
+    padding-left: 0em;
+}
+
+.formulaire {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulaire ul li {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 8px 15px; 
+    border: solid 0.2em #D9D9D9;
+    border-radius: 3em;
+    text-align: center;
+    line-height: 1.9em;
+}
+
+.formulaire ul li:active {
+    background-color: var(--filter-bg-color);
+}
+
+.formulaire ul li i {
+    margin-right: 5px; 
+    color: var(--main-color);
+}
+
+h3 {
+    padding-right: 1em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    padding: 0.7em;
+    border: 1em;
+    background-color: #0065FC;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-color: var(--main-bg-color);
+    
+}
+
+input {
+    font-weight: bolder;
+    border-style: none
+    
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    hgroup {
+        margin: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
 /****** Footer ***********/
 
 footer {
@@ -280,6 +406,16 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 /****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires {
@@ -294,10 +430,30 @@ footer {
     box-sizing: border-box;
 }
 
+
+
+
+
+
+
+
+
+
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
+
+
+
+
+
+
+
+
+
+
 
 /****** Populaires ***********/
 .populaires {
