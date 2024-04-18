@@ -234,9 +234,18 @@ hgroup h2 {
 }
 
 form {
-    padding: 1em;
-    padding-left: 0em;
+    border: solid 1px #F2F2F2;
+    border-radius: 1em;
 }
+
+.fa-location-dot {
+    padding: 1em;
+    background-color: #D9D9D9;
+    border: solid 1px #D9D9D9;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
 
 .formulaire {
     padding: 0%;
@@ -246,14 +255,27 @@ form {
     align-items: flex-start;
 }
 
+.formulaire ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .formulaire ul li {
+    display: flex;
+    flex-wrap: nowrap;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    margin-top: 15px;
     padding: 8px 15px; 
     border: solid 0.2em #D9D9D9;
     border-radius: 3em;
     text-align: center;
-    line-height: 1.9em;
+    line-height: 2em;
 }
 
 .formulaire ul li:active {
@@ -261,21 +283,17 @@ form {
 }
 
 .formulaire ul li i {
+    margin-bottom: 8px;
+    margin-top: 8px;
     margin-right: 5px; 
     color: var(--main-color);
 }
 
 h3 {
-    padding-right: 1em;
-}
-
-ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0%;
-    margin: 0%;
-    list-style: none;
+    margin-bottom: 8px;
+    margin-top: 30px;;
+    padding-right: 1em;
 }
 
 span {
@@ -284,20 +302,28 @@ span {
 
 button {
     color: white;
-    padding: 0.7em;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.8em;
     border: 1em;
     background-color: #0065FC;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-color: var(--main-bg-color);
+    margin: 0%;
+}
+
+.formulaire input {
+    border-style: none;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: 18px;
+    appearance: none;
     
 }
 
-input {
-    font-weight: bolder;
-    border-style: none
-    
-}
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -309,6 +335,21 @@ input {
 @media (max-width: 767.98px) {
     hgroup {
         margin: 1.5em;
+    }
+
+    .formulaire ul {
+        justify-content: flex-start;
+        flex-flow: wrap row;
+    }
+
+    .formulaire ul h3 {
+        order: -1; 
+        margin-bottom: 10px;
+        margin-left: 1.5em;
+    }
+
+    .formulaire ul li {
+        width: 100%;
     }
 }
 
