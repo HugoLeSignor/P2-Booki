@@ -82,6 +82,7 @@ header>img{
     display: flex;
     justify-content: space-between;
     padding: 1.875em;
+    padding-left: 0em;
     height: 1.2em;
 }   
 
@@ -215,6 +216,10 @@ header>ul#buttons.menu{
 
 
 /****** Formulaire ***********/
+
+.text {
+    color: black;
+}
 
 hgroup {
     display: flex;
