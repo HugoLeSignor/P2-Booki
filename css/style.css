@@ -281,6 +281,7 @@ h3 {
 
 span {
     font-weight: bold;
+    white-space : nowrap;
 }
 
 button {
@@ -388,6 +389,7 @@ button {
     }
 
     .formulaire h4 {
+        display: flex;
         margin-left: 1em;
     }
 
@@ -409,6 +411,12 @@ button {
         left: -1em;
         box-shadow: 0 4px 4px #F2F2F2;
     }
+
+    .fa-info {
+        padding-top: 0.5em;
+        padding: 8px;
+        
+    }
 }
 
 
@@ -421,9 +429,10 @@ button {
 
 .hebergements-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,minmax(10em,1fr));
     gap: 20px;
     margin-bottom: 2em;
+    float: inline-start;
 }
 
 .cards {
@@ -469,6 +478,7 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .section-title {
@@ -478,7 +488,7 @@ button {
 
 .show-more {
     font-weight: bolder;
-    font-size: x-large;
+    font-size: larger;
 }
 
 /****** Media queries ***********/
@@ -490,6 +500,22 @@ button {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .hebergements-and-populaires section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 0%;
+
+    }
+
+    .populaires {
+        order: -1;
+        margin-bottom: 2em;
+    }
+
+    .hebergements-cards {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 
     
 }
@@ -578,11 +604,28 @@ footer {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    
 }
 
 
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    
+}
 
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hebergements-and-populaires section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 0%;
+    }
 
+    
+    
+
+}
 
 
 
@@ -678,7 +721,7 @@ footer {
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -688,9 +731,27 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .populaires-cards .card {
+        margin: 0.5em;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .populaires-cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hebergements {
+        background: none !important;
+    }
+
+    
+    
+
 }
