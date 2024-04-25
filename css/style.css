@@ -232,9 +232,11 @@ header>ul#buttons.menu{
 
 
 .formulaire {
+    display: flex;
+    flex-direction: column;
     padding: 0%;
     margin: 0%;
-    align-items: flex-start;
+    
 }
 
 .formulaire ul {
@@ -331,6 +333,10 @@ button {
     margin-bottom: 2em;
 }
 
+form {
+    display: flex;
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -385,12 +391,15 @@ button {
     }
     
     .formulaire form {
+        margin-left: 0em;
         margin-left: 1em;
+        flex-grow: 1; 
     }
 
     .formulaire h4 {
         display: flex;
         margin-left: 1em;
+        margin-right: 1em;
     }
 
     button {
@@ -410,13 +419,15 @@ button {
         position: relative;
         left: -1em;
         box-shadow: 0 4px 4px #F2F2F2;
+        
     }
 
     .fa-info {
-        padding-top: 0.5em;
-        padding: 8px;
-        
-    }
+        width: 6px; 
+        height: 15px; 
+        position: relative; 
+    }   
+
 }
 
 
