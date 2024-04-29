@@ -258,8 +258,8 @@ header>ul#buttons.menu{
     border: solid 0.2em #D9D9D9;
     border-radius: 3em;
     text-align: center;
-    line-height: 2em;
     font-size: medium;
+    align-items: center;
 }
 
 .formulaire ul li:hover {
@@ -363,12 +363,12 @@ form {
     hgroup {
         display: flex;
         margin: 1.5em;
+        margin-left: 0em;
     }
 
     .formulaire {
         margin: 0em;
-        margin-left: 0em;
-        align-items: center;
+        margin-left: 1em;
         justify-content: center;
     } 
 
@@ -382,7 +382,7 @@ form {
     .formulaire ul h3 {
         order: -1; 
         margin-bottom: 10px;
-        margin-left: 1em;
+        margin-left: 0em;
         width: 100%;
     }
 
@@ -395,14 +395,15 @@ form {
     }
     
     .formulaire form {
-        width: 85%;
-        justify-content: flex-start;
+        width: 95%;
+        justify-content: center;
+        font-size: larger;
 
     }
 
     .formulaire h4 {
         display: flex;
-        margin-left: 1em;
+        margin-left: 0em;
         margin-right: 1em;
     }
 
@@ -426,9 +427,10 @@ form {
         border-radius: 1em;
         position: relative;
         left: -1em;
-        box-shadow: 0 4px 4px #F2F2F2;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         
     }
+
 
     .fa-info {
         width: 6px; 
@@ -436,9 +438,6 @@ form {
         position: relative; 
     }   
 
-    input::placeholder {
-        
-    }
 }
 
 
@@ -581,7 +580,6 @@ form {
 #activity .cartes .group .carte h4 {
     color: black;
     padding: 24px 20px;
-    ;
 }
 
 #activity h2 {
@@ -592,13 +590,47 @@ form {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    #activity .cartes {
+        justify-content: space-between;
+        height: 330px;
+        gap: 25px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #activity .cartes .group {
+        width: 100%;
+    }
+
+    #activity .cartes .group .carte img {
+        height: 200px!important;
+    }
 
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) { 
+    #activity .cartes {
+        justify-content: space-between;
+        flex-direction: column;
+        height: auto;
+        gap: 25px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #activity .cartes .group {
+        width: 100%;
+    }
+
+    #activity .cartes .group .carte img {
+        height: 150px!important;
+    }
     
+    #activity h2 {
+        margin-left: 30px;
+    }
 }
 
 
