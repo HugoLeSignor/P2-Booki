@@ -790,7 +790,8 @@ footer {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 0px;
+    margin-bottom: 33px;
 }
 
 .populaires-cards img {
