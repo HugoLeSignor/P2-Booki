@@ -15,14 +15,14 @@ Je suis chargé d'intégrer l'interface du site avec du code HTML et CSS.
 
 ### Étapes du projet
 
-- [ ] Découpez la maquette du site Booki
-- [ ] Intégrez le header du projet
-- [ ] Ajoutez le formulaire de recherche
-- [ ] Ajout de la partie Filtres
-- [ ] Réalisez la card présente dans Hébergements à Marseille
-- [ ] Gérez l’affichage des card du conteneur Hébergements à Marseille
-- [ ] Intégrez le conteneur Activités à Marseille 
-- [ ] Implémentez le footer
-- [ ] Mettre en place le **responsive design**
-- [ ] **Vérifiez** la qualité de mon code
+- [x] Découpez la maquette du site Booki
+- [x] Intégrez le header du projet
+- [x] Ajoutez le formulaire de recherche
+- [x] Ajout de la partie Filtres
+- [x] Réalisez la card présente dans Hébergements à Marseille
+- [x] Gérez l’affichage des card du conteneur Hébergements à Marseille
+- [x] Intégrez le conteneur Activités à Marseille 
+- [x] Implémentez le footer
+- [x] Mettre en place le **responsive design**
+- [x] **Vérifiez** la qualité de mon code
 
