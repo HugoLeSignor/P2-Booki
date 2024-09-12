@@ -190,20 +190,12 @@ header>ul#buttons.menu{
 
 /****** Formulaire ***********/
 
-.formulaire hgroup {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
-
-.formulaire hgroup h1 {
+.formulaire  h1 {
     margin-bottom: 3px;
     font-size: 22px;
 }
 
-.formulaire hgroup h2 {
+.formulaire  p {
     margin-top: 0;
     font-size: 16px;
     font-weight: lighter;
